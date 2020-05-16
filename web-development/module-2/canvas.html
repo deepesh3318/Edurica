@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Define the Outpute tag
+	</title>
+</head>
+<body>
+	<h1>HTML 5 New input tag types</h1>
+	<canvas height="200" id="canvas" width="200" style="border: 1px solid #333;"></canvas><br>
+	
+	<script>
+		var canvas1 = document.getElementById('canvas');
+		var context = canvas1.getContext("2d");
+
+		context.fillStyle = "#000232";
+		context.fillRect(0,0,200,200);
+	</script>
+
+	<canvas height="200" id="canvas2" width="200" style="border: 1px solid #333;"></canvas>
+	<script>
+		var canvas2 = document.getElementById('canvas2');
+		var context = canvas2.getContext("2d");
+
+		context.moveTo(20,90);
+		context.lineTo(20,90);
+		context.stroke();
+	</script>
+
+	<canvas height="200" id="arc" width="200" style="border: 1px solid #333;"></canvas>
+
+	<script>
+		
+		var canvas3 = document.getElementById('arc');
+		var context3 = canvas3.getContext("2d");
+
+		context3.beginPath();
+		context3.arc(100,100,100,0,10*Math.PI);
+		context3.fillStyle = "#000232";
+		context3.fill();
+
+	</script>
+</body>
+</html>

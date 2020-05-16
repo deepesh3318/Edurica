@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handling - JavaScript </title>
+	<style type="text/css">
+		.divBox {
+			width: 100%;
+			float: left;
+			background-color: green;
+			color: #fff;
+			box-sizing: border-box;
+			padding: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="divOne" class="divBox" onclick="alert('there is a pop-up')">
+		On Click Open Pop-up
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="divBox" id="divTwo"> 
+		Click Here to box.
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="divBox" id="divThree">
+		Duble Click Here!
+	</div>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+	<div class="divTwo" id="printmessage"></div>
+
+	<div class="divBox" id="message"></div>
+
+
+	<script type="text/javascript">
+		var divTwo = document.getElementById('divTwo');
+		divTwo.addEventListener('mouseover', function() {
+			console.log('also a new pop-up');
+		});
+
+		var divThree = document.getElementById('divThree');
+		divThree.addEventListener('dblclick', function(){
+			alert('div open when you click on 2 time');
+		});
+
+		function log(message){
+			var messageAdd = document.getElementById('message');
+			messageAdd.innerHTML = message;
+		}
+		log('hello');
+
+
+		var x = 1;
+		log(x);
+
+
+		function foo() {
+			var y = 2;
+			log('with foo, X is');
+		}
+	</script>
+</body>
+</html>

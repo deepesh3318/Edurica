@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handling - JavaScript </title>
+	<style type="text/css">
+		.divBox {
+			width: 100%;
+			float: left;
+			background-color: green;
+			color: #fff;
+			box-sizing: border-box;
+			padding: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="divBox" id="message">  
+</div>
+
+
+	<script type="text/javascript">
+				function log(message){
+			var messageAdd = document.getElementById('message');
+			messageAdd.innerHTML = messageAdd.innerHTML + message + '<br><br>';
+		}
+
+
+var x = 1; /* Globle variable - a variable that is decleared outside of the all functions */ 
+log(x)
+
+x = 1223.44
+log(x)
+log(typeof x)
+
+
+x = 'deep'
+log(x)
+log(typeof x)
+
+x = false
+log(x)
+log(typeof x)
+
+
+var greeting = 'Hello, Good Morning deepesh sa';
+log(greeting);
+log(typeof greeting);
+log(greeting.length);
+
+var x = 1;
+log(x);
+
+function foo(){
+	var y = 2;
+  log('With in foo X ' + x);
+  log('With in foo Y ' + y);
+  if(true){
+  	 var z = 10;
+     log("with foo if Z block " + z);
+  }
+  log("outside foo if bloxk " + z);
+}
+
+foo();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

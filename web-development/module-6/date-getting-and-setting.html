@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handling - JavaScript </title>
+	<style type="text/css">
+		.divBox {
+			width: 100%;
+			float: left;
+			background-color: green;
+			color: #fff;
+			box-sizing: border-box;
+			padding: 15px;
+		}
+	</style>
+</head>
+
+<body>
+		<div class="divBox" id="message">
+
+	<script type="text/javascript">
+		function log(message){
+			var messageAdd = document.getElementById('message');
+			messageAdd.innerHTML = messageAdd.innerHTML + message + '<br><br>';
+		}
+
+		var x = 4;
+		log(x);
+
+			// Get the current date
+		var d = new Date(); 
+		log(d);
+
+
+			// Get the current day
+		log( d.getDate() );
+
+		log( d.getFullYear() );
+
+		log( d.getFullDay() );
+	</script>
+</body>
+</html>

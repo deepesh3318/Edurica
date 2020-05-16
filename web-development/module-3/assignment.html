@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3 - styleing</title>
+	<style type="text/css">
+		body {
+			background-color: #f0f0f0;
+		}
+		header {
+			display: block;
+			background: blue;
+			padding: 15px;
+			min-height: 100px;
+		}
+		header ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+		}
+		header ul li {
+			float: left;
+			padding-top: 30px;
+			width: 20%;
+			text-align: center;
+		}
+		header ul li a {
+			color: #fff;
+			font-size: 18px;
+		}
+
+		table {
+			width: 50%;
+			color: #000;
+		}
+		table th {
+			background-color: #333;
+			color: #fff;
+			border:3px solid green;
+		}
+		table tr td {
+			border:1px solid green;
+		}
+		table td, table th  {
+			padding: 15px;
+		}
+
+
+		.image-box {
+			position: relative;
+			display: block;
+			min-height: 600px;
+		}
+		.image-box img {
+			width: 500px;
+			height: 500px;
+			position: absolute;
+			top: 100px;
+			left: 300px;
+		}
+		.display-paragraphs {
+			display: block;
+			position: relative;
+			clear: all;
+		}
+		.display-paragraphs p {
+			color: navy blue;
+			font-size: 20px;
+			padding: 15px;
+		}
+		.display-paragraphs p:first-child {
+			border: 1px solid #000;
+		}
+		.display-paragraphs p:nth-child(2) {
+			border: 1px dotted #000;
+		}
+		.display-paragraphs p:last-child {
+			border: 1px dashed #000;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="#"> Home</a></li>
+			<li><a href="#"> Gallery</a></li>
+			<li><a href="#"> Contact</a></li>
+			<li><a href="#"> About</a></li>
+			<li><a href="#"> Blog</a></li>
+		</ul>
+	</header>
+
+	<br>
+	<br>
+	<br>
+
+	<h1>
+		Policyholder
+	</h1>
+	<p>
+		A policyholder refers to the person who owns and is covered under a given renters or home insurance policy.
+	</p>
+	<table>
+		<thead>
+			<tr>
+				<th>Policy Id</th>
+				<th>Policy Holder’s Name</th>
+				<th>Insured Amount</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>#12312</td>
+				<td>Jonh smit</td>
+				<td>$12,900</td>
+			</tr>
+			<tr>
+				<td>#123123</td>
+				<td>Nik willy</td>
+				<td>$2,900</td>
+			</tr>
+			<tr>
+				<td>#123124</td>
+				<td>maya disojha</td>
+				<td>$45,800</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<br>
+	<br>
+
+	<p><strong>Showing image</strong>
+		<br>
+		<br>
+		<div class="image-box">
+			<figure>
+				<img src="images/insurance-getty.webp" alt="image">
+				<figcaption> There is image</figcaption>
+			</figure>
+		</div>
+	<br>
+	<br>
+	<br>
+
+
+	<div class="display-paragraphs">
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+	</div>
+</body>
+</html>

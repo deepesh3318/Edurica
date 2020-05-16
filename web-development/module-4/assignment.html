@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment No 3 - CSS3 Effects and animations</title>
+	<style type="text/css">
+		body {
+			font-family:Arial,Sans-Serif;
+			color:black;
+			font-size:12px;
+		}
+
+		@font-face {
+			font-family: 'Conv_Beyond Wonderland';
+			src: url('font/Beyond Wonderland.eot');
+			src: local(''), url('font/Beyond Wonderland.woff') format('woff'), url('font/Beyond Wonderland.ttf') format('truetype'), url('font/Beyond Wonderland.svg') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+
+		.main-box {
+			position: relative;
+			width: 100%;
+			float: left;
+			padding: 15px;
+		}
+		.text-with-shadow1 {
+			font-size: 42px;
+			color: #000;
+			text-shadow: 1px 1px 5px red;
+		}
+		.text-with-shadow {
+			font-size: 42px;
+			color: #000;
+			font-family: 'Conv_Beyond Wonderland';
+			text-shadow: 1px 1px 5px red;
+		}
+
+		.towD-transformation, .threeD-transformation {
+			position: relative;
+			margin-top: 100px;
+			display: block;
+		}
+		.towD-transformation img, .threeD-transformation img {
+			max-width: 200px;
+			display: inline-block;
+			margin-right: 20px;
+		}
+		.towD-transformation .img-1 {
+			transform: rotate(30deg);
+		}
+		.towD-transformation .img-2 {
+			transform: rotate(60deg);
+		}
+		.towD-transformation .img-3 {
+			transform: rotate(30deg);
+		}
+		.towD-transformation .img-4 {
+			transform: rotate(30deg);
+		}
+		.towD-transformation .img-5 {
+			transform: rotate(60deg);
+		}
+
+		 .threeD-transformation .img-1 {
+			transform: rotateY(30deg);
+			transform: rotateX(180deg);
+		}
+
+		.multiple-column {
+			position: relative;
+			width: 100%;
+			float: left;
+			margin-top: 100px;
+		}
+
+		.multiple-column .column-1, .multiple-column .column-2, .multiple-column .column-3, .multiple-column .column-4, .multiple-column .column-5  {
+			width: 60px;
+			float: left;
+			margin: 15px;
+			color: #fff;
+			text-align: center;
+		}
+
+		.column-1 {
+			background: red;
+		}
+		.column-2 {
+			background: black;
+		}
+		.column-3 {
+			background: green;
+		}
+		.column-4 {
+			background: blue;
+		}
+ 	</style>
+</head>
+<body>
+	<div class="main-box">
+		<h1 class="text-with-shadow1">
+			T h e B e a u t i f u l t e x t
+		</h1><br /><br /><br /><br /><br /><br />
+		<h2 class="text-with-shadow">
+			DEEPESH KUMAR YOGI
+		</h2><br /><br /><br /><br /><br /><br />
+
+		<div class="towD-transformation">
+			<img class="img-1" src="images/img-1.jpeg" alt="img-1">
+			<img class="img-2" src="images/img-2.jpg" alt="img-2">
+			<img class="img-3" src="images/img-3.jpg" alt="img-3"><br/><br/>
+			<img class="img-4" src="images/img-4.jpg" alt="img-4">
+			<img class="img-5" src="images/img-5.jpg" alt="img-5">
+		</div>
+		<br /><br /><br /><br /><br /><br />
+
+		<div class="threeD-transformation">
+			<img class="img-1" src="images/img-1.jpeg" alt="img-1">
+		</div>
+
+		<div class="multiple-column">
+			<div class="column-1">
+				There is column one
+			</div>
+			<div class="column-2">
+				There is column Two
+			</div>
+			<div class="column-3">
+				There is column Three
+			</div>
+			<div class="column-4">
+				There is column Five
+			</div>
+		</div>
+	</div>
+</body>
+</html>

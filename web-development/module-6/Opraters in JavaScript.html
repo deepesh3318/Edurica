@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handling - JavaScript </title>
+	<style type="text/css">
+		.divBox {
+			width: 100%;
+			float: left;
+			background-color: green;
+			color: #fff;
+			box-sizing: border-box;
+			padding: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="divBox" id="message">  
+</div>
+
+
+	<script type="text/javascript">
+			function log(message){
+			var messageAdd = document.getElementById('message');
+			messageAdd.innerHTML = messageAdd.innerHTML + message + '<br><br>';
+		}
+
+
+var x = 1; /* Globle variable - a variable that is decleared outside of the all functions */ 
+log(x)
+
+
+var deep = 1;
+log(++deep);
+
+var deep = 1;
+log(--deep);
+
+
+var a = 10, b = "10";
+log(a == b);
+
+var a = 10, b = "10";
+log(a === b);
+
+
+var a = 10, b = "10";
+log(a ==! b);
+
+
+var a = 10, b = "10";
+log(a !== b);
+
+
+
+
+
+
+	</script>
+</body>
+</html>

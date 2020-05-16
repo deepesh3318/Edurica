@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handling - JavaScript </title>
+	<style type="text/css">
+		.divBox {
+			width: 100%;
+			float: left;
+			background-color: green;
+			color: #fff;
+			box-sizing: border-box;
+			padding: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="divBox" id="message">  
+	</div>
+
+
+	<script type="text/javascript">
+
+		function print(message) {
+			var messageDIV = document.getElementById('message');
+			messageDIV.innerHTML = messageDIV.innerHTML + message + "<br /><br />"; 
+		}
+
+		var x =1;
+		print(x);
+
+		/*if else function*/
+
+		var temp = 50;
+		if (temp > 98.6) {
+			print('summer is normal');
+		} else {
+			print('summer is too hot');
+		}
+
+
+		/*Loop function*/
+
+		for (var i = 1; i <= 10; i++) {
+			console.log(i);
+			10[i];
+			print(i)
+		}
+
+
+		/*Arrow function*/
+
+		var fruits = ['apple', 'orange', 'mango', 'banana'];
+
+		var stin = "<ul>";
+
+		for (var i = 0; i < fruits.length; i++) {
+			stin = stin + '<li>' + fruits[i] + '</li>'
+			print(fruits)
+		}
+		stin = stin + '</ul>';
+		 print(stin);
+
+	</script>
+</body>
+</html>
