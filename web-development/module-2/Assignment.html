@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment for the module No. 2	</title>
+</head>
+<body>
+	<h1>USER INFORMATION</h1> <br /><br />
+	<form action="" method="post">
+
+
+		<label for="first_Name">First Name</label>
+		<input type="text" id="first_Name" name="first name" required="required" placeholder="Enter Your First Name">
+		<br/><br/>
+
+		<label for="last_Name">Last Name</label>
+		<input type="text" id="last_Name" name="last name" required="required" placeholder="Enter Your Last Name">
+		<br/><br/>
+
+
+		<label for="email">Email Address</label>
+		<input type="email" id="email" name="email" required="required" placeholder="Enter your email id">
+		<br/> <br/>
+
+		<label for="dob">Date of Birth</label>
+		<input type="date" id="dob" max="2020-01-01" name="date" required="required" placeholder="Select date of birth">
+		<br/><br/>
+
+
+		<input type="submit" name="submit" required="required" value="submit">
+
+	</form>
+	<br>
+	<br>
+	<h2>Audio</h2>
+
+	<audio id="play_audio" class="audioPlay" autoplay="autoplay" loop="loop" controls="controls">
+		<source src="audio/horse.ogg" type="audio/ogg">
+  		<source src="audio/horse.mp3" type="audio/mpeg">
+	</audio>
+	<br>
+	<br>
+	<h2>Video</h2>
+
+	<video id="play_video" width="500" class="videoPlay" autoplay="autoplay" loop="loop" controls="controls">
+		<source src="video/mov_bbb.mp4" type="video/mp4">
+		<source src="video/mov_bbb.webp" type="video/webm">
+	</video>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<h2>Circle with Canvas</h2>
+	<canvas height="200" id="arc" width="200" style="border: 1px solid #333;"></canvas>
+
+	<script>
+		
+		var canvas_cricel = document.getElementById('arc');
+		var context1 = canvas_cricel.getContext("2d");
+
+		context1.beginPath();
+		context1.arc(100,100,100,0,10*Math.PI);
+		context1.fillStyle = "#000232";
+		context1.fill();
+
+	</script>
+
+	<br>
+	<br>
+	<br>
+
+	<h2>Circle with Svg</h2>
+	<svg id="circle_svg" height="200" width="200">
+		<circle cx="50" cy="50" r="40" fill="blue" />
+	</svg>
+</body>
+</html>

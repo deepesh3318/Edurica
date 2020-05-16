@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handling - JavaScript </title>
+	<style type="text/css">
+		.divBox {
+			width: 100%;
+			float: left;
+			background-color: green;
+			color: #fff;
+			box-sizing: border-box;
+			padding: 15px;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<script type="text/javascript">
+		var person = {
+			'Name' : 'deepesh',
+			'Age' : 20,
+			'isWorking' : false,
+			EmailIds: ['deepesh@gmail.com', 'deepesh@yahoo.com'],
+			address: {
+				lineOne: "111, gadh k pass rawala",
+				lineTwo: "Bhadoon, Ajmer, Rajasthan"
+			},
+			doesPersonWorking: function () {
+				return this.isWorking = false;
+			}
+		};
+
+		console.log( person );
+		console.log( person.Name );
+		person.Age = 34;
+		console.log( person.Age );
+
+		console.log( person.doesPersonWorking() );
+	</script>
+</body>
+</html>

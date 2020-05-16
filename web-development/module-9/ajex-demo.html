@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Ajex Module</title>
+  <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'><link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">    
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Hello, world!</h1>
+          <h4 id="qot">Contents ...</h4>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+  <script type="text/javascript">
+  var xhr = new XMLHttpRequest();
+    xhr.addEventListener('readystatechange', function () {
+      console.log(xhr.readyState);
+      console.log('Event occuer');
+      if( ( xhr.status >= 200 && xhr.status < 400) && xhr.readyState == 4){
+        document.getElementById('qot').innerHTML = xhr.responseText;
+      } else if (xhr.status >= 400){
+        alert("Due to some net salow ");
+      }
+    })
+
+
+  xhr.open('GET', 'docs/textfile.txt', true);
+  xhr.send();
+  </script>
+
+</body>
+</html>
