@@ -1,0 +1,50 @@
+header {
+    padding-top: 50px;
+}
+
+footer {
+    margin-bottom: 15px;
+}
+
+.main-slider .item img {
+    max-width: 100%;
+}
+
+.key-features {
+    padding: 50px 0;
+}
+
+.sec-heading {
+    padding: 10px 0 30px 0;
+}
+
+.social-media {
+    padding: 50px 0;
+}
+
+.social-media a {
+    font-size: 3em;
+    display: inline-block;
+    width: 19.5%;
+    text-align: center;
+    position: relative;
+}
+
+.store-banner, .stroy-grid {
+    padding-bottom: 30px;
+}
+
+.our-courses {
+    margin-top: 50px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
