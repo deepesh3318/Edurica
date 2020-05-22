@@ -1,9 +1,3 @@
-/*
-    Theme Name: Medilab
-    Theme URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-*/
 @font-face {
     font-family: 'Conv_Lobster_1.3';
     src: url('../fonts/Lobster_1.3.eot');
@@ -444,6 +438,12 @@ cta -2
 {
 	margin-right: 7px;
 }
+
+#map, #map_boxmap {
+        height: 400px;
+      }
+
+
 /***************************************
 contact us
 ***************************************/
@@ -623,10 +623,6 @@ contact us
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
-}
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: #00805d;
 }
 
 @-webkit-keyframes animate-loading {
