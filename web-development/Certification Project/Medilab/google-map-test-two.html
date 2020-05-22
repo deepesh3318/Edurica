@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medilab | Medical Help</title>
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style type="text/css">
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="" id="map">
+
+    
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="contactform/contactform.js"></script>
+  <script src="js/custom.js"></script>
+  
+
+  <script type="text/javascript">
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat:12.981, lng:77.693},
+          zoom: 15
+        });
+
+        var request = {
+          placeId: 'ChIJl45o8gkSrjsRHjXYFU1vIz0',
+          fields: ['name', 'formatted_address', 'place_id', 'geometry']
+        };
+
+        var infowindow = new google.maps.InfoWindow();
+        var service = new google.maps.places.PlacesService(map);
+
+        service.getDetails(request, function(place, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            var marker = new google.maps.Marker({
+              map: map,
+              position: place.geometry.location
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+                'Place ID: ' + place.place_id + '<br>' +
+                place.formatted_address + '</div>');
+              infowindow.open(map, this);
+            });
+          }
+        });
+      }
+  </script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQb6lbU4I1ZOrAJJ6_1b0KBQKFF9eWNEY&libraries=places&callback=initMap"></script>
+</script>
+</body>
+</html>
